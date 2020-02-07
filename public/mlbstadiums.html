@@ -11,14 +11,39 @@
 			color: #333;
 			font-weight: 300;
 		}
+
+        #navBar{
+			background-color: mediumspringgreen;
+			color: white;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		.navKey{
+			padding-right: 4em;
+		}
+
+        #pageTitle{
+			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			font-size: 3em;
+			color: mediumseagreen;
+		}
 	</style>
 </head>
 <body>
-    <h1>MLB Stadiums</h1>
+    <h1 id="pageTitle">MLB Stadiums</h1>
+    <nav id="navBar">
+        <a href="index.html" class="navKey">Recent Photos</a>
+		<a href="mlbstadiums.html" class="navKey">MLB</a>
+		<a href="mlbstadiums.html" class="navKey">NFL</a>
+		<a href="mlbstadiums.html" class="navKey">NBA</a>
+		<a href="mlbstadiums.html" class="navKey">MLS</a>
+		<a href="mlbstadiums.html" class="navKey">NHL</a>
+	</nav>
     <h4>Kauffman Stadium</h4>
 	<div id="row1">
-        <img src="photos/kauffmanstadium.jpg" alt="Kauffman Stadium" title="Kauffman Stadium" width="40%" float="left"/>
         <p>Kauffman Stadium is home to the Kansas City Royals. I've spent many days there during Kansas City Summers.</p>
+        <a href="SportingKC.html"><img src="photos/kauffmanstadium.jpg" alt="Kauffman Stadium" title="Kauffman Stadium" width="40%"></a>
 	</div>
 
     <h4>T-Mobile Park</h4> 
@@ -27,16 +52,16 @@
             T-Mobile Park is home to the Seattle Mariners. I went to Seattle on vacation once, and they happened to
             be playing the Royals during the vacation so my family and I went to a game. The stadium was quite nice.
         </p>
-		<img src="photos/seattle-mariners.jpg" alt="T-Mobile Park" title="T-Mobile Park" width="40%" float="right" />
+		<a href="SportingKC.html"><img src="photos/seattle-mariners.jpg" alt="T-Mobile Park" title="T-Mobile Park" width="40%" /></a>
 	</div>
 
     <h4>Busch Stadium</h4>
 	<div id="row3">
-        <img src="photos/buschstadium_0.jpg" alt="Busch Stadium" title="Busch Stadium" width="40%" float="left" />
         <p>
             Busch Stadium is Home to the Saint Louis Cardinals. I've gone to a couple of games there while visiting
             friends and family. I really enjoy how the skyline of the city is visible out above center field.
         </p>
+        <a href="SportingKC.html"><img src="photos/buschstadium_0.jpg" alt="Busch Stadium" title="Busch Stadium" width="40%" /></a>
 	</div>
 </body>
 </html>
