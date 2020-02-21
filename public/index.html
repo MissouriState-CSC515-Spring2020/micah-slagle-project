@@ -1,69 +1,43 @@
-<!doctype html>
-<html>
-<head lang='en'>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width'>
-	<title>Recent Photos</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-	<style>
-		body {
-			font-family: 'Helvetica Neue', Arial, sans-serif;
-			color: #333;
-			font-weight: 300;
-		}
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Stadiums I've Visited</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-		#navBar{
-			background-color: mediumspringgreen;
-			color: white;
-			margin-top: 1em;
-			margin-bottom: 1em;
-			padding-top: .5em;
-			padding-bottom: .5em;
-		}
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-		.navKey{
-			padding-right: 4em;
-			padding-left: .5em;
-
-		}
-		
-		#pageTitle{
-			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-			font-size: 3em;
-			color: darkslategrey;
-		}
-
-		body{
-			background-image:url(photos/bg-leaves.jpeg);
-		}
-	</style>
-</head>
-<body>
-	<h1 id="pageTitle">Professional Stadiums I've Visited - Recent Photos</h1>
-	<nav id="navBar">
-		<a href="index.html" class="navKey">Recent Photos</a>
-		<a href="mlbstadiums.html" class="navKey">MLB</a>
-		<a href="mlbstadiums.html" class="navKey">NFL</a>
-		<a href="mlbstadiums.html" class="navKey">NBA</a>
-		<a href="mlbstadiums.html" class="navKey">MLS</a>
-		<a href="mlbstadiums.html" class="navKey">NHL</a>
-	</nav>
-	<div id="row1">
-		<a href="SportingKC.html"><img src="photos/sportingPark.jpg" alt="Childrens Mercy Park" title="Childrens Mercy Park" width="37%" /></a>
-		<a href="SportingKC.html"><img src="photos/kauffmanstadium.jpg" alt="Kauffman Stadium" title="Kauffman Stadium" width="60%" /></a>
-	</div>
-
-	<div id="row2">
-		<a href="SportingKC.html"><img src="photos/seattle-mariners.jpg" alt="T-Mobile Park" title="T-Mobile Park" width="55%" /></a>
-		<a href="SportingKC.html"><img src="photos/Arrowhead.jpg" alt="Arrowhead Stadium" title="Arrowhead Stadium" width="43%" /></a>
-	</div>
-
-	<div id="row3">
-		<a href="SportingKC.html"><img src="photos/greenbaypack.jpg" alt="Lambeau Field" title="Lambeau Field" width="53%" /></a>
-		<a href="SportingKC.html"><img src="photos/buschstadium_0.jpg" alt="Busch Stadium" title="Busch Stadium" width="45%" /></a>
-	</div>
-	<!-- Checkpoint 1 code
-		<p>The following message is written in the the update.js file: <span id='time-now'>...</span></p>
-	<script src='bundle.js'></script> -->
-</body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
