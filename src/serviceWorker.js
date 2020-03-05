@@ -1,3 +1,6 @@
+//This is the given react Service Worker. I could not get it working so I made my own at public/worker.js
+
+
 // This optional code is used to register a service worker.
 // register() is not called by default.
 
