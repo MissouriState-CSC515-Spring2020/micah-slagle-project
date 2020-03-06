@@ -1,3 +1,5 @@
+//Self made service worker file, React was not working on npm start  call
+
 /* eslint-disable no-restricted-globals */
 var CACHE_NAME = 'pwa-task-manager';
 var urlsToCache = [
