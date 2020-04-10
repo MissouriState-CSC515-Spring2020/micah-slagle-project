@@ -1,30 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../App.css';
 import cmp from '../photos/sportingPark.jpg';
 
-const Cmp = () => {
-    return(
-        <div className="SportingKC">
-            <h1 id="pageTitle">Children's Mercy Park - Sporting KC</h1>
-            <div id="row1">
-                <img src={cmp} alt="Childrens Mercy Park" title="Childrens Mercy Park" width="50%"/>
+const APIkey = 'AIzaSyA2XD5vkwEV1lWC_sn_j4mF3iHXhG9fgGA';
+const videoId = 'x3MZjf0FziE';
+
+//'https://www.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&id=x3MZjf0FziE&key=AIzaSyA2XD5vkwEV1lWC_sn_j4mF3iHXhG9fgGA'
+
+var finalUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet%2C%20statistics&id=${videoId}&key=${APIkey}`
+
+
+
+class IndividualVideo extends Component {
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            videoJSON: []
+        }
+    }
+
+    async componentDidMount() {
+        const response = await fetch(finalUrl);
+        const data = await response.json();
+        //console.log(data);
+        const videoJSON = data.items[0]
+        this.setState({videoJSON});
+        
+    }
+
+    render(){
+        //console.log(finalUrl);
+        console.log("this.state.videoJSON" + this.state.videoJSON)
+        return(
+            <div>
+                {/* <h1>{this.state.videoJSON.snippet.title}</h1> */}
+                <iframe title = "epicurious video" width="560" height="315" src={"https://www.youtube.com/embed/"+this.state.videoJSON.id} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    
+                    
             </div>
-            <p>
-                So far, Childrens Mercy Park is the only MLS stadium I have visited. It is home to Sporting KC,
-                Kansas City's Professional Soccer Team. As I am from Kansas City, and Soccer is my favorite sport
-                Sporting KC became my favorite team, out of any sport.
-            </p>
-            <p>
-                I really enjoy this Stadium, partially because of how relatively small it is. There is no bad
-                seat in the house, and it always feels as though an individual is very close to the action. Front
-                row seats are relatively cheap too, much cheaper than front row seats at other sporting venues. The
-                small atmosphere for the stadium really gives this the environment a unified feel. 
-            </p>
-            <p>
-                Childrens Mercy Park holds 18,467 for soccer matches and 25,000 for concerts. It opened in 2011.
-            </p>
-        </div>
-    )
+        )
+    }
 }
 
-export default Cmp
+export default IndividualVideo;
