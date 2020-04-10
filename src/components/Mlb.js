@@ -5,12 +5,27 @@ import tmob from '../photos/seattle-mariners.jpg';
 import busch from '../photos/buschstadium_0.jpg';
 import { Link } from 'react-router-dom';
 
+// fetch('https://www.googleapis.com/youtube/v3/playlists?id=PLqF9suoUuMzkXiIbmTzxVTlDh1m03pSrN&part=snippet&key=AIzaSyA2XD5vkwEV1lWC_sn_j4mF3iHXhG9fgGA')
+//             .then(response =>{
+//         if (response.status >= 400){
+//             return Promise.reject(response);
+//         }
+//         console.log('Response Status', response.status, response.statusText);
+//         return response.json();
+//     })
+//     .then(jsonPlaylistData => {
+//         console.log(jsonPlaylistData);
+//         var playlistTitle = jsonPlaylistData.items[0].snippet.title;
+//     })
+
 const Mlbstadiums = () => {
     return(
         <div className="Mlbstadiums">
-        <h1 id="pageTitle">MLB Stadiums</h1>
+        <h1 id="pageTitle">Future Stadiums</h1>
         <h4>Kauffman Stadium</h4>
-        <div id="row1">
+        <p><bold>Playlist Title:</bold>placeholder</p>
+        <p>test</p>
+        {/* <div id="row1">
             <p>Kauffman Stadium is home to the Kansas City Royals. I've spent many days there during Kansas City Summers.</p>
             <Link to="/Cmp"><img src={kauf} alt="Kauffman Stadium" title="Kauffman Stadium" width="40%" /></Link>
         </div>
@@ -31,7 +46,7 @@ const Mlbstadiums = () => {
                 friends and family. I really enjoy how the skyline of the city is visible out above center field.
             </p>
             <Link to="/Cmp"><img src={busch} alt="Busch Stadium" title="Busch Stadium" width="40%" /></Link>
-        </div>
+        </div> */}
     </div>
     )
 }
