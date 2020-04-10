@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import SportingKC from './components/Cmp';
-import Mlbstadiums from './components/Mlb';
+import IndividualVideo from './components/Single';
+import Playlist from './components/Group';
 import Navbar from './components/Navbar';
 import Homepage from './components/Home';
 import { BrowserRouter, Route } from 'react-router-dom';
@@ -12,8 +12,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Route exact path='/' component={Homepage} />
-        <Route path='/Mlb' component={Mlbstadiums} />
-        <Route path='/Cmp' component={SportingKC} />
+        <Route path='/Mlb' component={Playlist} />
+        <Route path='/Cmp' component={IndividualVideo} />
       </div>
     </BrowserRouter>
   );

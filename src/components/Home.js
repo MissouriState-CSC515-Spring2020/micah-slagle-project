@@ -1,13 +1,5 @@
 import React, {Component} from 'react';
 import '../App.css';
-import cmp from '../photos/sportingPark.jpg';
-import kauf from '../photos/kauffmanstadium.jpg';
-import tmob from '../photos/seattle-mariners.jpg';
-import arrowH from '../photos/Arrowhead.jpg';
-import lambeau from '../photos/greenbaypack.jpg';
-import busch from '../photos/buschstadium_0.jpg';
-import { Link } from 'react-router-dom'
-
 
 const APIkey = 'AIzaSyA2XD5vkwEV1lWC_sn_j4mF3iHXhG9fgGA';
 const channelId = 'UCcjhYlL1WRBjKaJsMH_h7Lg';
