@@ -47,7 +47,7 @@ class Home extends Component {
                 {
                         this.state.resultYt.map((link, i) =>{
                             console.log(link);
-                            var frame = <div className="youtube" key={i}><iframe title="Four Levels of Wings" width="560" height="315" src={link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
+                            var frame = <div className="youtube" key={i}><iframe title="Epicurious Video" width="560" height="315" src={link} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
                             return frame;
                         })
                     }
