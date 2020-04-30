@@ -24,14 +24,12 @@ class Home extends Component {
     async componentDidMount() {
         const response = await fetch(finalUrl);
         const data = await response.json();
-        //console.log(data);
         const resultYt = data.items.map(obj => "https://www.youtube.com/embed/"+obj.id.videoId)
         this.setState({resultYt});
         
     }
 
     render(){
-        //console.log(finalUrl);
         console.log(this.state.resultYt)
         return(
             <div>

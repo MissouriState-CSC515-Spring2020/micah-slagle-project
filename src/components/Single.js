@@ -29,7 +29,6 @@ class IndividualVideo extends Component {
     }
 
     render(){
-        //console.log(finalUrl);
         console.log("this.state.videoJSON");
         console.log(this.state.videoJSON);
         return(

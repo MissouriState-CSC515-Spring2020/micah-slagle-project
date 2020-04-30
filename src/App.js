@@ -1,9 +1,5 @@
 import React, {Suspense, lazy} from 'react';
 import './App.css';
-//import IndividualVideo from './components/Single';
-//import Playlist from './components/Group';
-//import Navbar from './components/Navbar';
-//import Homepage from './components/Home';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 const Homepage = lazy(() => import('./components/Home'))
