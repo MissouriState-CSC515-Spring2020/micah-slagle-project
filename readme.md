@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project is a web project for my Advanced Internet Programming Class, CSC 515 at Missouri State University.
+
 ## Available Scripts
 
 In the project directory, you can run:

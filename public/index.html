@@ -62,6 +62,20 @@
         console.log('Service Worker is not supported by browser.');
       }
     </script>
+    <!-- <script>
+      fetch('https://www.googleapis.com/youtube/v3/channels?part=snippet%2Cstatistics%2CcontentDetails&id=UCvA2SgPVi3Hw6n_WER0VrcQ&key=AIzaSyA2XD5vkwEV1lWC_sn_j4mF3iHXhG9fgGA')
+            .then(response =>{
+        if (response.status >= 400){
+            return Promise.reject(response);
+        }
+        console.log('Response Status', response.status, response.statusText);
+        return response.json();
+        })
+        .then(jsonData => {
+            console.log(jsonData);
+
+        })
+    </script> -->
 
   </body>
 </html>
